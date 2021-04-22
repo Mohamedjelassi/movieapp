@@ -12,7 +12,7 @@ const SearchMovie = ({ setNameSearch, ratingSearch, setRatingSearch }) => {
         className="name-search"
           type="text"
           
-          placeholder="Type movie name to search"
+          placeholder="Type movie name to search......"
           onChange={(e) => setNameSearch(e.target.value)}
         />
         <div className="rating-search">

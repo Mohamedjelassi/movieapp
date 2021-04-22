@@ -13,13 +13,19 @@ const MoviesList = ({ moviesList, nameSearch, ratingSearch }) => {
       .filter(
         (el) =>
           el.Title.toLowerCase().includes(nameSearch.toLowerCase().trim()) &&
-          el.Rate >= 1
-      )
+          el.Rate >= ratingSearch
+          
+      )  
       .map((el, i) => (
         <Moviecard key={i} movie={el} />
       ))}
+     
   </div>
   </div>
 );
 };
+
+
+
+
 export default MoviesList;

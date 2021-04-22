@@ -117,6 +117,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  bottom: 20px;
   left:82%;
 }
 .Add-btn:hover {
@@ -134,7 +135,7 @@ body {
 }
 .add-modal {
   position: relative;
-  top: 21%;
+  top: 26%;
   left: 80%;
   padding: 20px;
   width: 350px;
@@ -198,4 +199,22 @@ form textarea:focus {
 .Add-btn-container {
   position: sticky;
   top: 70px;
+}
+.search-container {
+  display: flex;
+  position: relative;
+  left: 600px;
+  top: 20px;
+  padding: 20px;
+}
+.name-search {
+  width: 30%;
+  padding: 12px;
+  background-color: #8aa2b4;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width:5px;
+  border-color:black;
+  margin-right: 90px;
 }
