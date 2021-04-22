@@ -11,7 +11,7 @@
       Type: "movie",
       PURL:
         "https://fr.web.img6.acsta.net/c_310_420/pictures/21/01/04/17/52/0328539.jpg",
-      rate: "4",
+        Rate: "4",
       link: "https://www.youtube.com/watch?v=wZti8QKBWPo&ab_channel=UniversalPictures",
     },
     {
@@ -23,7 +23,7 @@
       Type: "movie",
       PURL:
         "https://m.media-amazon.com/images/M/MV5BYmJjODZlYjItZTE2Zi00YjI5LThmNTAtNzQ0OGMyNjAzOTIzXkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_UY1200_CR90,0,630,1200_AL_.jpg",
-        rate: "3",
+        Rate: "3",
       link: "https://www.youtube.com/watch?v=w9IkVtLvflU&ab_channel=HBO",
     },
     {
@@ -34,7 +34,7 @@
         "Two childhood friends become an unlikely crime-fighting superhero duo after creating a formula that gives ordinary people superpowers. Directed by Ben Falcone.",
       Type: "movie",
       PURL: "https://fr.web.img6.acsta.net/pictures/21/03/23/10/41/1129711.jpg",
-      rate: "3",
+      Rate: "3",
       link: "https://www.youtube.com/watch?v=qnx6-YLXFwg&ab_channel=Netflix",
     },
   
@@ -46,7 +46,7 @@
         "In their lifetime of friendship, kindred spirits Star (Kristen Wiig) and Barb (Annie Mumolo) remained at one another's side through the challenges and triumphs of life. Yet as middle-age approaches, both women feel the inexplicable urge to explore the world. Armed with their signature exuberance, Barb and Star leave their rural Midwestern town behind to embark on a holiday, their first beyond the confines of their community. Directed by Josh Greenbaum; co-starring Jamie Dornan and Damon Wayans Jr.",
       Type: "movie",
       PURL: "https://image.tmdb.org/t/p/w300/cq0iE4niwJCxDrduaOVxbMDcbot.jpg",
-      rate: "3",
+      Rate: "3",
       link: "https://www.youtube.com/watch?v=yvmDgXfYPbA&ab_channel=MovieclipsTrailers",
     },
     {
@@ -57,7 +57,7 @@
         "This animated film features the voice of Jamie Foxx as Joe Gardner, an average guy teaching music in middle school whose real dream is to be a jazz musician. When he finally earns the chance to perform onstage, he has an accident that leaves him in a near-death state. As his soul is scheduled to proceed to the afterlife, he discovers that his body is still not dead. He escapes to a beforelife place where he tries to negotiate a deal so he could return to Earth—before it’s too late. Directed by Pete Docter. Featuring the voices of Tina Fey and Angela Bassett.",
       Type: "movie",
       PURL: "https://fr.web.img6.acsta.net/pictures/20/10/15/11/09/5088324.jpg",
-      rate: "5",
+      Rate: "5",
       link: "https://www.youtube.com/watch?v=xOsLIiBStEs&ab_channel=Pixar",
     },
     {
@@ -69,7 +69,7 @@
       Type: "movie",
       PURL:
         "https://m.media-amazon.com/images/M/MV5BNDdlZjA3MzgtNmJlNC00NGZkLWFhNGMtNTk4ZmQwMDM1YzY0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
-        rate: "2",
+        Rate: "2",
       link: "https://www.youtube.com/watch?v=6wAdEY10flE&ab_channel=MovieTrailersSource",
     },
     {
@@ -81,7 +81,7 @@
       Type: "movie",
       PURL:
         "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDP7YFWTu86mTLyQHJSTRkuTHLB_Ky_EY5uKMQ9ZDxeSpdZ8BZ",
-        rate: "4",
+        Rate: "4",
       link: "https://www.youtube.com/watch?v=bE8pwEF-3TI&ab_channel=FocusFeatures",
     },
     {
@@ -93,7 +93,7 @@
       Type: "movie",
       PURL:
         "https://m.media-amazon.com/images/M/MV5BZThjNDhkNWQtYzIyZC00MDcxLWFlYjctODhhMmM4YzdiZmI3XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_.jpg",
-        rate: "3",
+        Rate: "3",
       link: "https://www.youtube.com/watch?v=7i5kiFDunk8&ab_channel=FocusFeatures",
     },
     { id: "9",
@@ -104,7 +104,7 @@
       Type: "movie",
       PURL:
         "https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_UY1200_CR90,0,630,1200_AL_.jpg",
-        rate: "4",
+        Rate: "4",
       link: "https://www.youtube.com/watch?v=VFOrGkAvjAE&ab_channel=AmazonPrimeVideo",
     },
   ];

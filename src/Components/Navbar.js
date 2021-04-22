@@ -3,7 +3,6 @@ import "../App.css";
 
 const Navbar = () => {
   return (
-    <div>
       <header>
         <h1>
           <span style={{ fontStyle: "bold", color: "#2E4053" }}>Movie </span>{" "}
@@ -21,7 +20,6 @@ const Navbar = () => {
           </li>
         </ul>
       </header>
-    </div>
   );
 };
 

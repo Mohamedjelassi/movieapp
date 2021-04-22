@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Rate from "./Ratings";
+import Rates from "./Ratings";
 
 Modal.setAppElement("#root");
 
 const AddMovie = ({ addNewMovie }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [name, setName] = useState("");
-  const [date, setDate] = useState("");
-  const [rating, setRating] = useState("");
-  const [image, setImage] = useState("");
+  const [Title, setTitle] = useState("");
+  const [Year, setYear] = useState("");
+  const [Rate, setRate] = useState("");
+  const [PURL, setPURL] = useState("");
   const [description, setDescription] = useState("");
 
   const openModal = () => {
@@ -22,23 +22,22 @@ const AddMovie = ({ addNewMovie }) => {
 
   const handleSubmit = (e) => {
     let newMovie = {
-      name,
-      date,
-      rating,
-      image,
+      Title,
+      Year,
+      Rate,
+      PURL,
       description,
     };
     addNewMovie(e, newMovie);
     setIsOpen(false);
-    setName("");
-    setDate("");
-    setRating("");
-    setImage("");
+    setTitle("");
+    setYear("");
+    setRate("");
+    setPURL("");
     setDescription("");
   };
 
   return (
-    <div>
       <div className="Add-btn-container">
         <button className="Add-btn" onClick={openModal}>
           + Add new movie
@@ -54,30 +53,35 @@ const AddMovie = ({ addNewMovie }) => {
             <input
               type="text"
               name="name"
-              value={name}
+              value={Title}
               required
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setTitle(e.target.value)}
             />
             <label>Movie Rate</label>
-            <div className="rating-search">
-              <Rate rating={rating} setRatingSearch={setRating} />
-            </div>
+            <input
+              type="number"
+              name="Rate"
+              value={Rate}
+              required
+              onChange={(e) => setRate(e.target.value)}
+            />
+            
            
             <label>Movie Release Date</label>
             <input
               type="number"
-              name="date"
-              value={date}
+              name="Year"
+              value={Year}
               required
-              onChange={(e) => setDate(e.target.value)}
+              onChange={(e) => setYear(e.target.value)}
             />
             <label>Movie Image</label>
             <input
               type="url"
               name="image"
-              value={image}
+              value={PURL}
               required
-              onChange={(e) => setImage(e.target.value)}
+              onChange={(e) => setPURL(e.target.value)}
             />
 
             <label>Movie Description</label>
@@ -97,7 +101,7 @@ const AddMovie = ({ addNewMovie }) => {
           </button>
         </Modal>
       </div>
-    </div>
+  
   );
 };
 

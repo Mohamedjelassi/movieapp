@@ -4,14 +4,18 @@ import "../App.css";
 
 
 
-const StarRating = ({nb}) => {
-  const [rating, setRating] = useState(nb);
+const StarRating = ({rate}) => {
+  const [rating, setRating] = useState(rate);
   const [hover, setHover] = useState(null);
   
   return (
     <div>
       {[...Array(5)].map((star, i) => {
         const ratingValue = i + 1;
+        StarRating.defaultProps = {
+          setRating: () => {},
+          rate: 1,
+        };
         return (
           <label>
             <input
@@ -33,6 +37,10 @@ const StarRating = ({nb}) => {
       })}
     </div>
   );
+};
+StarRating.defaultProps = {
+  setRating: () => {},
+  rate: 1,
 };
 
 export default StarRating;
