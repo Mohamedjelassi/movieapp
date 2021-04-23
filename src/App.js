@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   const [moviesList, setMoviesList] = useState(MovieData);
   const [nameSearch, setNameSearch] = useState("");
-  const [ratingSearch, setRatingSearch] = useState('');
+  const [ratingSearch, setRatingSearch] = useState(1);
 
   const addNewMovie = (e, newMovie) => {
     e.preventDefault();
@@ -26,7 +26,10 @@ function App() {
         ratingSearch={ratingSearch}
         setRatingSearch={setRatingSearch}
       />
-      <AddMovie addNewMovie={addNewMovie} />
+      <AddMovie 
+      addNewMovie={addNewMovie}
+      setRatingSearch={setRatingSearch}
+      />
      
       <MoviesList
         moviesList={moviesList}

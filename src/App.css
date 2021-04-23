@@ -131,7 +131,7 @@ body {
 }
 /* add movie modal */
 .addMovie-h1 {
-  color: #1e1b26;
+  color: #2E4053;
 }
 .add-modal {
   position: relative;
@@ -140,7 +140,7 @@ body {
   padding: 20px;
   width: 350px;
   text-align: center;
-  border: 1px solid #1e1b26;
+  border: 1px solid #2E4053;
   border-radius: 5px;
   background-color: white;
   position: -webkit-sticky;

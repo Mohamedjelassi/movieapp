@@ -1,6 +1,6 @@
 import React from "react";
 import Moviecard from "./Moviecard";
-import StarRating from "./Ratings";
+
 
 
 

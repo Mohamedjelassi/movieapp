@@ -25,7 +25,7 @@ const Moviecard = ({movie :{Title, Year, PURL, Rate, description } }) => {
       <h1>{Title}</h1>
       <h4 style={{ color: "#617d98" }}>{Year}</h4>
       </a>
-      <Ratings rate={Rate} />
+      <Ratings Rate={Rate} />
       <div>
         <button onClick={adddesc}> description </button>
         <p> {text} </p>

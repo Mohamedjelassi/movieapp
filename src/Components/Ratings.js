@@ -1,46 +1,52 @@
-import React, { useState } from "react";
-import { FaStar } from "react-icons/fa";
-import "../App.css";
+import React from "react";
 
 
 
-const StarRating = ({rate}) => {
-  const [rating, setRating] = useState(rate);
-  const [hover, setHover] = useState(null);
-  
-  return (
-    <div>
-      {[...Array(5)].map((star, i) => {
-        const ratingValue = i + 1;
-        StarRating.defaultProps = {
-          setRating: () => {},
-          rate: 1,
-        };
-        return (
-          <label>
-            <input
-              type="radio"
-              name="rating"
-              value={ratingValue}
-              onClick={() => setRating(ratingValue)}
-             
-            />
-            <FaStar
-              className="stat"
-              color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
-              size={30}
-              onMouseEnter={() => setHover(ratingValue)}
-              onMouseLeave={() => setHover(null)}
-            />
-          </label>
+
+
+const Rate = ({ Rate, setRatingSearch }) => {
+
+  const stars = (Rate) => {
+
+    let startsTab = [];
+    
+    for (let i = 1; i <= 5; i++) {
+      if (i <= Rate) {
+        startsTab.push(
+          <span
+            style={{
+              color: "#FFC83D",
+              fontSize: "40px",
+              marginLeft: "0",
+              cursor: "pointer",
+            }}
+            onClick={() => setRatingSearch(i)}
+          >
+            ★
+          </span>
         );
-      })}
-    </div>
-  );
+      } else {
+        startsTab.push(
+          <span
+            style={{
+              color: "#FFC83D",
+              fontSize: "40px",
+              marginLeft: "0",
+              cursor: "pointer",
+            }}
+            onClick={() => setRatingSearch(i)}
+          >
+            ☆
+          </span>
+        );
+      }
+    }
+    return startsTab;
+  };
+  return <div>{stars(Rate)}</div>;
 };
-StarRating.defaultProps = {
-  setRating: () => {},
-  rate: 1,
+Rate.defaultProps = {
+  setRatingSearch: () => {},
+  Rate: 1,
 };
-
-export default StarRating;
+export default Rate;
