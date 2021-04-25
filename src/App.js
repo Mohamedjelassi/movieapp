@@ -5,6 +5,8 @@ import { MovieData } from "./Components/MovieData";
 import AddMovie from "./Components/AddMovie";
 import MoviesList from "./Components/MoviesList";
 import SearchMovie from "./Components/SearchMovie";
+import { BrowserRouter, Route } from "react-router-dom";
+import MovieInfo from "./Components/MovieInfo";
 
 import "./App.css";
 
@@ -17,28 +19,44 @@ function App() {
     e.preventDefault();
     setMoviesList([...moviesList, newMovie]);
   };
+
   return (
-    <div className="App">
-      <Navbar />
-      
-      <SearchMovie
-        setNameSearch={setNameSearch}
-        ratingSearch={ratingSearch}
-        setRatingSearch={setRatingSearch}
-      />
-      <AddMovie 
-      addNewMovie={addNewMovie}
-      setRatingSearch={setRatingSearch}
-      />
-     
-      <MoviesList
-        moviesList={moviesList}
-        nameSearch={nameSearch}
-        ratingSearch={ratingSearch}
-        setRatingSearch={setRatingSearch}
-      />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+
+        <Route
+          path="/movie/:Tiltle"
+          render={(props) => <MovieInfo {...props} moviesList={moviesList} />}
+        />
+
+        <Route
+          path="/home"
+          render={() => (
+            <>
+              <SearchMovie
+                setNameSearch={setNameSearch}
+                ratingSearch={ratingSearch}
+                setRatingSearch={setRatingSearch}
+              />
+              <AddMovie
+                addNewMovie={addNewMovie}
+                setRatingSearch={setRatingSearch}
+              />
+
+              <MoviesList
+                moviesList={moviesList}
+                nameSearch={nameSearch}
+                ratingSearch={ratingSearch}
+                setRatingSearch={setRatingSearch}
+              />
+            </>
+          )}
+          target="_blank"
+        />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

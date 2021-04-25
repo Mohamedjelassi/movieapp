@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Ratings from "./Ratings";
+import { Link } from 'react-router-dom';
 
 
 import "../App.css";
@@ -18,7 +19,7 @@ const Moviecard = ({movie :{Title, Year, PURL, Rate, description } }) => {
     }
   };
   return (
-     
+    <Link to={`/movie/${Title.split(" ").join('')}`}> 
     <article className="movie">
       <a target="_blank" >
       <img className="photo" src={PURL} alt="" />
@@ -31,6 +32,7 @@ const Moviecard = ({movie :{Title, Year, PURL, Rate, description } }) => {
         <p> {text} </p>
       </div>
     </article>
+    </Link>
     
   );
 }

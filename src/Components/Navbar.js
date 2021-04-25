@@ -1,13 +1,16 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "../App.css";
 
 const Navbar = () => {
   return (
       <header>
+        <Link to='/home'> 
         <h1>
-          <span style={{ fontStyle: "bold", color: "#2E4053" }}>Movie </span>{" "}
-          App
+          Movie 
+          <span style={{color: "#2E4053" }}> App</span>
         </h1>
+        </Link>
         <ul className="navmenu">
           <li>
             <a href="#">About</a>
